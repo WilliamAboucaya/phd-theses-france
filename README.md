@@ -1,4 +1,5 @@
 [![python](https://img.shields.io/badge/python-≥3.12-blue.svg?style=flat&logo=python&logoColor=white)](https://www.python.org)
+[![R](https://img.shields.io/badge/R-≥4.5.1-276DC3.svg?style=flat&logo=r&logoColor=white)](https://www.r-project.org)
 
 # French Ph. D. Theses Dataset (1985–2025)
 
@@ -25,7 +26,7 @@ The dataset was created to support quantitative and computational analyses of do
 To install the project and its dependencies, we rely on [UV](https://docs.astral.sh/uv/getting-started/installation/). The command to run is therefore:
 
 ```bash
-uv venv & uv sync
+uv sync
 ```
 
 ---
@@ -34,7 +35,7 @@ uv venv & uv sync
 
 The datasets can be reproduced automatically by launching the script [`code/datasets/theses_fr/theses_fr.py`](code/datasets/theses_fr/theses_fr.py). The resulting dataset will be available in the [`data/processed`](data/processed) folder.
 
-You can also add the optional features (needed for certain analyses) using the scripts in the [`code/features`](code/features) folder.
+You can also produce the additional features using the scripts in the [`code/features`](code/features) folder.
 
 ---
 
@@ -123,7 +124,6 @@ The dataset is designed to be interoperable and extensible:
 ## Reproducibility
 
 - Data collected from publicly available sources
-- Code to reproduce the dataset is publicly available on [GitHub]()
 - Data snapshot reflects the state of sources as of March 31, 2026. Future updates may improve completeness, especially for recent years.
 
 ---
@@ -139,4 +139,4 @@ If you use this dataset, please cite the associated paper:
 
 ## Contact
 
-For questions, feedback, or contributions, please [send an issue to the GitHub repository]().
+For questions, feedback, or contributions, please [send an issue](../../issues).
