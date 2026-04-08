@@ -1,9 +1,10 @@
 [![python](https://img.shields.io/badge/python-≥3.12-blue.svg?style=flat&logo=python&logoColor=white)](https://www.python.org)
 [![R](https://img.shields.io/badge/R-≥4.5.1-276DC3.svg?style=flat&logo=r&logoColor=white)](https://www.r-project.org)
+[![Zenodo DOI](https://img.shields.io/badge/dataset-10.5281/zenodo.19453191-1682D4.svg?style=flat&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.19453191)
 
 # French Ph. D. Theses Dataset (1985–2025)
 
-We provide the code to reproduce the dataset of French Ph. D. theses available [here]().
+We provide the code to reproduce the dataset of French Ph. D. theses available [here](https://doi.org/10.5281/zenodo.19453191).
 
 ## Overview
 
