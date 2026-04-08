@@ -2,6 +2,8 @@
 
 # French Ph. D. Theses Dataset (1985–2025)
 
+We provide the code to reproduce the dataset of French Ph. D. theses available [here]().
+
 ## Overview
 
 This dataset provides a comprehensive, structured collection of doctoral theses defended in France between 1985 and 2025. Each record corresponds to a single defended PhD thesis and includes detailed information on the thesis itself, the individuals involved (author, supervisors, jury members), and associated institutions.
