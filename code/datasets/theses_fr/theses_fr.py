@@ -86,10 +86,12 @@ if __name__ == "__main__":
             topic_names_to_keep.update(topic_names)
 
         topic_names_to_keep = list(topic_names_to_keep)
+        gender_correction_table = "processed/keep/gender/gender_corrected.csv"
     else:
         topic_names_to_keep = None
+        gender_correction_table = None
 
     generate_theses_fr(path_to_data_, research_topics=topic_names_to_keep, only_missing_files=True, verbose=True, 
                        idrefs_correction_table=os.path.join(path_to_data_, "processed/keep/idref_corrected_table.csv"),
-                       gender_correction_table="processed/keep/gender/gender_corrected.csv", max_workers=max_workers,
+                       gender_correction_table=gender_correction_table, max_workers=max_workers,
                        topics_suffix=topics_suffix)

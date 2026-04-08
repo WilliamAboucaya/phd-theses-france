@@ -81,7 +81,7 @@ def improve_gender_completion(path_to_data: str | os.PathLike[str], topics_suffi
 
     name_df['final_gender'] = name_df['gender_guess']
 
-    if topics_suffix != "[full_data]":
+    if gender_correction_table:
         # STEP 4 – Apply manual corrections
         manual_gender_df = pd.read_csv(os.path.join(path_to_data, gender_correction_table), encoding='utf-8')
 
@@ -110,7 +110,7 @@ def improve_gender_completion(path_to_data: str | os.PathLike[str], topics_suffi
 
     theses_df.to_parquet(os.path.join(path_to_data, f"processed/theses-soutenues-gender-guessed{topics_suffix}.parquet"), index=False)
 
-    if topics_suffix != "[full_data]":
+    if gender_correction_table:
         # STEP 7 - Add potential new ungendered names to the gender correction table
         ungendered_df = name_df.loc[name_df['final_gender'].isna()][['prenom', 'nom', 'identifier']]
         new_ungendered_df = ungendered_df.merge(

@@ -12,7 +12,7 @@ import requests
 from tqdm import tqdm
 
 
-def _download_single_idref(idref: str, path_to_data: str, session: requests.Session):
+def _download_single_idref(idref: str, path_to_data: str | os.PathLike[str], session: requests.Session):
     """Download a single IdRef RDF file."""
     url = f"https://www.idref.fr/{idref}.rdf"
     out_path = os.path.join(path_to_data, f"raw/idrefs/{idref}.rdf")
