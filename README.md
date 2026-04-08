@@ -70,7 +70,7 @@ The dataset is derived from the following primary sources:
 
 The dataset includes both raw metadata and derived features.
 
-A complete description of the features is available in the [feature codebook]()
+A complete description of the features is available in the [feature codebook](docs/feature_codebook.md)
 
 ---
 
