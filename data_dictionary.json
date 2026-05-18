@@ -1,0 +1,2029 @@
+{
+  "fields": [
+    {
+      "name": "accessible",
+      "type": "boolean",
+      "description": "Whether the thesis is publicly accessible (true) or not (false)"
+    },
+    {
+      "name": "cas",
+      "type": "string",
+      "description": "System used to publish the thesis record"
+    },
+    {
+      "name": "code_etab",
+      "type": "string",
+      "description": "Institution code"
+    },
+    {
+      "name": "defense_date",
+      "type": "date",
+      "description": "Thesis defense date"
+    },
+    {
+      "name": "discipline",
+      "type": "string",
+      "description": "Discipline field"
+    },
+    {
+      "name": "embargo",
+      "type": "date",
+      "description": "Embargo date if applicable. Not available for theses gathered using the API."
+    },
+    {
+      "name": "nnt",
+      "type": "string",
+      "description": "National thesis number (unique identifier)"
+    },
+    {
+      "name": "source",
+      "type": "string",
+      "description": "Data source"
+    },
+    {
+      "name": "rameau_topics",
+      "type": "string",
+      "description": "Rameau topics headings (separated with ||)"
+    },
+    {
+      "name": "phd_by_publication",
+      "type": "boolean",
+      "description": "true if the doctorate is a thesis by published works, false otherwise. Not available for theses gathered using the API."
+    },
+    {
+      "name": "from_api",
+      "type": "boolean",
+      "description": "true if the thesis has been gathered from the Thèses.fr API, false if it is from the 2023 bulk export"
+    },
+    {
+      "name": "author.idref",
+      "type": "string",
+      "description": "IdRef authority identifier of the thesis author"
+    },
+    {
+      "name": "author.lastname",
+      "type": "string",
+      "description": "Last name of the thesis author"
+    },
+    {
+      "name": "author.firstname",
+      "type": "string",
+      "description": "First name of the thesis author"
+    },
+    {
+      "name": "author.gender",
+      "type": "string",
+      "description": "Gender of the thesis author"
+    },
+    {
+      "name": "author.birthdate",
+      "type": "date",
+      "description": "Birth date of the thesis author"
+    },
+    {
+      "name": "author.deathdate",
+      "type": "date",
+      "description": "Death date of the thesis author"
+    },
+    {
+      "name": "author.languages",
+      "type": "string",
+      "description": "Languages spoken by the thesis author"
+    },
+    {
+      "name": "author.country",
+      "type": "string",
+      "description": "Country of origin of the thesis author"
+    },
+    {
+      "name": "author.age",
+      "type": "integer",
+      "description": "Age of the thesis author (at the time of the defense)"
+    },
+    {
+      "name": "supervisor.0.idref",
+      "type": "string",
+      "description": "IdRef authority identifier of thesis supervisor #0"
+    },
+    {
+      "name": "supervisor.0.lastname",
+      "type": "string",
+      "description": "Last name of thesis supervisor #0"
+    },
+    {
+      "name": "supervisor.0.firstname",
+      "type": "string",
+      "description": "First name of thesis supervisor #0"
+    },
+    {
+      "name": "supervisor.0.gender",
+      "type": "string",
+      "description": "Gender of thesis supervisor #0"
+    },
+    {
+      "name": "supervisor.0.birthdate",
+      "type": "date",
+      "description": "Birth date of thesis supervisor #0"
+    },
+    {
+      "name": "supervisor.0.deathdate",
+      "type": "date",
+      "description": "Death date of thesis supervisor #0"
+    },
+    {
+      "name": "supervisor.0.languages",
+      "type": "string",
+      "description": "Languages spoken by thesis supervisor #0"
+    },
+    {
+      "name": "supervisor.0.country",
+      "type": "string",
+      "description": "Country of origin of thesis supervisor #0"
+    },
+    {
+      "name": "supervisor.0.centrality",
+      "type": "integer",
+      "description": "Number of occurrences in juries in the past 4 years for thesis supervisor #0"
+    },
+    {
+      "name": "supervisor.0.age",
+      "type": "integer",
+      "description": "Age of thesis supervisor #0 (at the time of the defense)"
+    },
+    {
+      "name": "supervisor.0.yrs_since_phd",
+      "type": "integer",
+      "description": "Years since thesis supervisor #0's thesis defense"
+    },
+    {
+      "name": "supervisor.0.yrs_since_first_jury",
+      "type": "integer",
+      "description": "Years since thesis supervisor #0's first participation in a thesis jury in France"
+    },
+    {
+      "name": "supervisor.1.idref",
+      "type": "string",
+      "description": "IdRef authority identifier of thesis supervisor #1"
+    },
+    {
+      "name": "supervisor.1.lastname",
+      "type": "string",
+      "description": "Last name of thesis supervisor #1"
+    },
+    {
+      "name": "supervisor.1.firstname",
+      "type": "string",
+      "description": "First name of thesis supervisor #1"
+    },
+    {
+      "name": "supervisor.1.gender",
+      "type": "string",
+      "description": "Gender of thesis supervisor #1"
+    },
+    {
+      "name": "supervisor.1.birthdate",
+      "type": "date",
+      "description": "Birth date of thesis supervisor #1"
+    },
+    {
+      "name": "supervisor.1.deathdate",
+      "type": "date",
+      "description": "Death date of thesis supervisor #1"
+    },
+    {
+      "name": "supervisor.1.languages",
+      "type": "string",
+      "description": "Languages spoken by thesis supervisor #1"
+    },
+    {
+      "name": "supervisor.1.country",
+      "type": "string",
+      "description": "Country of origin of thesis supervisor #1"
+    },
+    {
+      "name": "supervisor.1.centrality",
+      "type": "integer",
+      "description": "Number of occurrences in juries in the past 4 years for thesis supervisor #1"
+    },
+    {
+      "name": "supervisor.1.age",
+      "type": "integer",
+      "description": "Age of thesis supervisor #1 (at the time of the defense)"
+    },
+    {
+      "name": "supervisor.1.yrs_since_phd",
+      "type": "integer",
+      "description": "Years since thesis supervisor #1's thesis defense"
+    },
+    {
+      "name": "supervisor.1.yrs_since_first_jury",
+      "type": "integer",
+      "description": "Years since thesis supervisor #1's first participation in a thesis jury in France"
+    },
+    {
+      "name": "supervisor.2.idref",
+      "type": "string",
+      "description": "IdRef authority identifier of thesis supervisor #2"
+    },
+    {
+      "name": "supervisor.2.lastname",
+      "type": "string",
+      "description": "Last name of thesis supervisor #2"
+    },
+    {
+      "name": "supervisor.2.firstname",
+      "type": "string",
+      "description": "First name of thesis supervisor #2"
+    },
+    {
+      "name": "supervisor.2.gender",
+      "type": "string",
+      "description": "Gender of thesis supervisor #2"
+    },
+    {
+      "name": "supervisor.2.birthdate",
+      "type": "date",
+      "description": "Birth date of thesis supervisor #2"
+    },
+    {
+      "name": "supervisor.2.deathdate",
+      "type": "date",
+      "description": "Death date of thesis supervisor #2"
+    },
+    {
+      "name": "supervisor.2.languages",
+      "type": "string",
+      "description": "Languages spoken by thesis supervisor #2"
+    },
+    {
+      "name": "supervisor.2.country",
+      "type": "string",
+      "description": "Country of origin of thesis supervisor #2"
+    },
+    {
+      "name": "supervisor.2.centrality",
+      "type": "integer",
+      "description": "Number of occurrences in juries in the past 4 years for thesis supervisor #2"
+    },
+    {
+      "name": "supervisor.2.age",
+      "type": "integer",
+      "description": "Age of thesis supervisor #2 (at the time of the defense)"
+    },
+    {
+      "name": "supervisor.2.yrs_since_phd",
+      "type": "integer",
+      "description": "Years since thesis supervisor #2's thesis defense"
+    },
+    {
+      "name": "supervisor.2.yrs_since_first_jury",
+      "type": "integer",
+      "description": "Years since thesis supervisor #2's first participation in a thesis jury in France"
+    },
+    {
+      "name": "supervisor.3.idref",
+      "type": "string",
+      "description": "IdRef authority identifier of thesis supervisor #3"
+    },
+    {
+      "name": "supervisor.3.lastname",
+      "type": "string",
+      "description": "Last name of thesis supervisor #3"
+    },
+    {
+      "name": "supervisor.3.firstname",
+      "type": "string",
+      "description": "First name of thesis supervisor #3"
+    },
+    {
+      "name": "supervisor.3.gender",
+      "type": "string",
+      "description": "Gender of thesis supervisor #3"
+    },
+    {
+      "name": "supervisor.3.birthdate",
+      "type": "date",
+      "description": "Birth date of thesis supervisor #3"
+    },
+    {
+      "name": "supervisor.3.deathdate",
+      "type": "date",
+      "description": "Death date of thesis supervisor #3"
+    },
+    {
+      "name": "supervisor.3.languages",
+      "type": "string",
+      "description": "Languages spoken by thesis supervisor #3"
+    },
+    {
+      "name": "supervisor.3.country",
+      "type": "string",
+      "description": "Country of origin of thesis supervisor #3"
+    },
+    {
+      "name": "supervisor.3.centrality",
+      "type": "integer",
+      "description": "Number of occurrences in juries in the past 4 years for thesis supervisor #3"
+    },
+    {
+      "name": "supervisor.3.age",
+      "type": "integer",
+      "description": "Age of thesis supervisor #3 (at the time of the defense)"
+    },
+    {
+      "name": "supervisor.3.yrs_since_phd",
+      "type": "integer",
+      "description": "Years since thesis supervisor #3's thesis defense"
+    },
+    {
+      "name": "supervisor.3.yrs_since_first_jury",
+      "type": "integer",
+      "description": "Years since thesis supervisor #3's first participation in a thesis jury in France"
+    },
+    {
+      "name": "supervisor.4.idref",
+      "type": "string",
+      "description": "IdRef authority identifier of thesis supervisor #4"
+    },
+    {
+      "name": "supervisor.4.lastname",
+      "type": "string",
+      "description": "Last name of thesis supervisor #4"
+    },
+    {
+      "name": "supervisor.4.firstname",
+      "type": "string",
+      "description": "First name of thesis supervisor #4"
+    },
+    {
+      "name": "supervisor.4.gender",
+      "type": "string",
+      "description": "Gender of thesis supervisor #4"
+    },
+    {
+      "name": "supervisor.4.birthdate",
+      "type": "date",
+      "description": "Birth date of thesis supervisor #4"
+    },
+    {
+      "name": "supervisor.4.deathdate",
+      "type": "date",
+      "description": "Death date of thesis supervisor #4"
+    },
+    {
+      "name": "supervisor.4.languages",
+      "type": "string",
+      "description": "Languages spoken by thesis supervisor #4"
+    },
+    {
+      "name": "supervisor.4.country",
+      "type": "string",
+      "description": "Country of origin of thesis supervisor #4"
+    },
+    {
+      "name": "supervisor.4.centrality",
+      "type": "integer",
+      "description": "Number of occurrences in juries in the past 4 years for thesis supervisor #4"
+    },
+    {
+      "name": "supervisor.4.age",
+      "type": "integer",
+      "description": "Age of thesis supervisor #4 (at the time of the defense)"
+    },
+    {
+      "name": "supervisor.4.yrs_since_phd",
+      "type": "integer",
+      "description": "Years since thesis supervisor #4's thesis defense"
+    },
+    {
+      "name": "supervisor.4.yrs_since_first_jury",
+      "type": "integer",
+      "description": "Years since thesis supervisor #4's first participation in a thesis jury in France"
+    },
+    {
+      "name": "supervisor.5.idref",
+      "type": "string",
+      "description": "IdRef authority identifier of thesis supervisor #5"
+    },
+    {
+      "name": "supervisor.5.lastname",
+      "type": "string",
+      "description": "Last name of thesis supervisor #5"
+    },
+    {
+      "name": "supervisor.5.firstname",
+      "type": "string",
+      "description": "First name of thesis supervisor #5"
+    },
+    {
+      "name": "supervisor.5.gender",
+      "type": "string",
+      "description": "Gender of thesis supervisor #5"
+    },
+    {
+      "name": "supervisor.5.birthdate",
+      "type": "date",
+      "description": "Birth date of thesis supervisor #5"
+    },
+    {
+      "name": "supervisor.5.deathdate",
+      "type": "date",
+      "description": "Death date of thesis supervisor #5"
+    },
+    {
+      "name": "supervisor.5.languages",
+      "type": "string",
+      "description": "Languages spoken by thesis supervisor #5"
+    },
+    {
+      "name": "supervisor.5.country",
+      "type": "string",
+      "description": "Country of origin of thesis supervisor #5"
+    },
+    {
+      "name": "supervisor.5.centrality",
+      "type": "integer",
+      "description": "Number of occurrences in juries in the past 4 years for thesis supervisor #5"
+    },
+    {
+      "name": "supervisor.5.age",
+      "type": "integer",
+      "description": "Age of thesis supervisor #5 (at the time of the defense)"
+    },
+    {
+      "name": "supervisor.5.yrs_since_phd",
+      "type": "integer",
+      "description": "Years since thesis supervisor #5's thesis defense"
+    },
+    {
+      "name": "supervisor.5.yrs_since_first_jury",
+      "type": "integer",
+      "description": "Years since thesis supervisor #5's first participation in a thesis jury in France"
+    },
+    {
+      "name": "supervisor.6.idref",
+      "type": "string",
+      "description": "IdRef authority identifier of thesis supervisor #6"
+    },
+    {
+      "name": "supervisor.6.lastname",
+      "type": "string",
+      "description": "Last name of thesis supervisor #6"
+    },
+    {
+      "name": "supervisor.6.firstname",
+      "type": "string",
+      "description": "First name of thesis supervisor #6"
+    },
+    {
+      "name": "supervisor.6.gender",
+      "type": "string",
+      "description": "Gender of thesis supervisor #6"
+    },
+    {
+      "name": "supervisor.6.birthdate",
+      "type": "date",
+      "description": "Birth date of thesis supervisor #6"
+    },
+    {
+      "name": "supervisor.6.deathdate",
+      "type": "date",
+      "description": "Death date of thesis supervisor #6"
+    },
+    {
+      "name": "supervisor.6.languages",
+      "type": "string",
+      "description": "Languages spoken by thesis supervisor #6"
+    },
+    {
+      "name": "supervisor.6.country",
+      "type": "string",
+      "description": "Country of origin of thesis supervisor #6"
+    },
+    {
+      "name": "supervisor.6.centrality",
+      "type": "integer",
+      "description": "Number of occurrences in juries in the past 4 years for thesis supervisor #6"
+    },
+    {
+      "name": "supervisor.6.age",
+      "type": "integer",
+      "description": "Age of thesis supervisor #6 (at the time of the defense)"
+    },
+    {
+      "name": "supervisor.6.yrs_since_phd",
+      "type": "integer",
+      "description": "Years since thesis supervisor #6's thesis defense"
+    },
+    {
+      "name": "supervisor.6.yrs_since_first_jury",
+      "type": "integer",
+      "description": "Years since thesis supervisor #6's first participation in a thesis jury in France"
+    },
+    {
+      "name": "jury_member.0.idref",
+      "type": "string",
+      "description": "IdRef authority identifier of jury member #0"
+    },
+    {
+      "name": "jury_member.0.lastname",
+      "type": "string",
+      "description": "Last name of jury member #0"
+    },
+    {
+      "name": "jury_member.0.firstname",
+      "type": "string",
+      "description": "First name of jury member #0"
+    },
+    {
+      "name": "jury_member.0.gender",
+      "type": "string",
+      "description": "Gender of jury member #0"
+    },
+    {
+      "name": "jury_member.0.birthdate",
+      "type": "date",
+      "description": "Birth date of jury member #0"
+    },
+    {
+      "name": "jury_member.0.deathdate",
+      "type": "date",
+      "description": "Death date of jury member #0"
+    },
+    {
+      "name": "jury_member.0.languages",
+      "type": "string",
+      "description": "Languages spoken by jury member #0"
+    },
+    {
+      "name": "jury_member.0.country",
+      "type": "string",
+      "description": "Country of origin of jury member #0"
+    },
+    {
+      "name": "jury_member.0.centrality",
+      "type": "integer",
+      "description": "Number of occurrences in juries in the past 4 years for jury member #0"
+    },
+    {
+      "name": "jury_member.0.age",
+      "type": "integer",
+      "description": "Age of jury member #0 (at the time of the defense)"
+    },
+    {
+      "name": "jury_member.0.yrs_since_phd",
+      "type": "integer",
+      "description": "Years since jury member #0's thesis defense"
+    },
+    {
+      "name": "jury_member.0.yrs_since_first_jury",
+      "type": "integer",
+      "description": "Years since jury member #0's first participation in a thesis jury in France"
+    },
+    {
+      "name": "jury_member.1.idref",
+      "type": "string",
+      "description": "IdRef authority identifier of jury member #1"
+    },
+    {
+      "name": "jury_member.1.lastname",
+      "type": "string",
+      "description": "Last name of jury member #1"
+    },
+    {
+      "name": "jury_member.1.firstname",
+      "type": "string",
+      "description": "First name of jury member #1"
+    },
+    {
+      "name": "jury_member.1.gender",
+      "type": "string",
+      "description": "Gender of jury member #1"
+    },
+    {
+      "name": "jury_member.1.birthdate",
+      "type": "date",
+      "description": "Birth date of jury member #1"
+    },
+    {
+      "name": "jury_member.1.deathdate",
+      "type": "date",
+      "description": "Death date of jury member #1"
+    },
+    {
+      "name": "jury_member.1.languages",
+      "type": "string",
+      "description": "Languages spoken by jury member #1"
+    },
+    {
+      "name": "jury_member.1.country",
+      "type": "string",
+      "description": "Country of origin of jury member #1"
+    },
+    {
+      "name": "jury_member.1.centrality",
+      "type": "integer",
+      "description": "Number of occurrences in juries in the past 4 years for jury member #1"
+    },
+    {
+      "name": "jury_member.1.age",
+      "type": "integer",
+      "description": "Age of jury member #1 (at the time of the defense)"
+    },
+    {
+      "name": "jury_member.1.yrs_since_phd",
+      "type": "integer",
+      "description": "Years since jury member #1's thesis defense"
+    },
+    {
+      "name": "jury_member.1.yrs_since_first_jury",
+      "type": "integer",
+      "description": "Years since jury member #1's first participation in a thesis jury in France"
+    },
+    {
+      "name": "jury_member.2.idref",
+      "type": "string",
+      "description": "IdRef authority identifier of jury member #2"
+    },
+    {
+      "name": "jury_member.2.lastname",
+      "type": "string",
+      "description": "Last name of jury member #2"
+    },
+    {
+      "name": "jury_member.2.firstname",
+      "type": "string",
+      "description": "First name of jury member #2"
+    },
+    {
+      "name": "jury_member.2.gender",
+      "type": "string",
+      "description": "Gender of jury member #2"
+    },
+    {
+      "name": "jury_member.2.birthdate",
+      "type": "date",
+      "description": "Birth date of jury member #2"
+    },
+    {
+      "name": "jury_member.2.deathdate",
+      "type": "date",
+      "description": "Death date of jury member #2"
+    },
+    {
+      "name": "jury_member.2.languages",
+      "type": "string",
+      "description": "Languages spoken by jury member #2"
+    },
+    {
+      "name": "jury_member.2.country",
+      "type": "string",
+      "description": "Country of origin of jury member #2"
+    },
+    {
+      "name": "jury_member.2.centrality",
+      "type": "integer",
+      "description": "Number of occurrences in juries in the past 4 years for jury member #2"
+    },
+    {
+      "name": "jury_member.2.age",
+      "type": "integer",
+      "description": "Age of jury member #2 (at the time of the defense)"
+    },
+    {
+      "name": "jury_member.2.yrs_since_phd",
+      "type": "integer",
+      "description": "Years since jury member #2's thesis defense"
+    },
+    {
+      "name": "jury_member.2.yrs_since_first_jury",
+      "type": "integer",
+      "description": "Years since jury member #2's first participation in a thesis jury in France"
+    },
+    {
+      "name": "jury_member.3.idref",
+      "type": "string",
+      "description": "IdRef authority identifier of jury member #3"
+    },
+    {
+      "name": "jury_member.3.lastname",
+      "type": "string",
+      "description": "Last name of jury member #3"
+    },
+    {
+      "name": "jury_member.3.firstname",
+      "type": "string",
+      "description": "First name of jury member #3"
+    },
+    {
+      "name": "jury_member.3.gender",
+      "type": "string",
+      "description": "Gender of jury member #3"
+    },
+    {
+      "name": "jury_member.3.birthdate",
+      "type": "date",
+      "description": "Birth date of jury member #3"
+    },
+    {
+      "name": "jury_member.3.deathdate",
+      "type": "date",
+      "description": "Death date of jury member #3"
+    },
+    {
+      "name": "jury_member.3.languages",
+      "type": "string",
+      "description": "Languages spoken by jury member #3"
+    },
+    {
+      "name": "jury_member.3.country",
+      "type": "string",
+      "description": "Country of origin of jury member #3"
+    },
+    {
+      "name": "jury_member.3.centrality",
+      "type": "integer",
+      "description": "Number of occurrences in juries in the past 4 years for jury member #3"
+    },
+    {
+      "name": "jury_member.3.age",
+      "type": "integer",
+      "description": "Age of jury member #3 (at the time of the defense)"
+    },
+    {
+      "name": "jury_member.3.yrs_since_phd",
+      "type": "integer",
+      "description": "Years since jury member #3's thesis defense"
+    },
+    {
+      "name": "jury_member.3.yrs_since_first_jury",
+      "type": "integer",
+      "description": "Years since jury member #3's first participation in a thesis jury in France"
+    },
+    {
+      "name": "jury_member.4.idref",
+      "type": "string",
+      "description": "IdRef authority identifier of jury member #4"
+    },
+    {
+      "name": "jury_member.4.lastname",
+      "type": "string",
+      "description": "Last name of jury member #4"
+    },
+    {
+      "name": "jury_member.4.firstname",
+      "type": "string",
+      "description": "First name of jury member #4"
+    },
+    {
+      "name": "jury_member.4.gender",
+      "type": "string",
+      "description": "Gender of jury member #4"
+    },
+    {
+      "name": "jury_member.4.birthdate",
+      "type": "date",
+      "description": "Birth date of jury member #4"
+    },
+    {
+      "name": "jury_member.4.deathdate",
+      "type": "date",
+      "description": "Death date of jury member #4"
+    },
+    {
+      "name": "jury_member.4.languages",
+      "type": "string",
+      "description": "Languages spoken by jury member #4"
+    },
+    {
+      "name": "jury_member.4.country",
+      "type": "string",
+      "description": "Country of origin of jury member #4"
+    },
+    {
+      "name": "jury_member.4.centrality",
+      "type": "integer",
+      "description": "Number of occurrences in juries in the past 4 years for jury member #4"
+    },
+    {
+      "name": "jury_member.4.age",
+      "type": "integer",
+      "description": "Age of jury member #4 (at the time of the defense)"
+    },
+    {
+      "name": "jury_member.4.yrs_since_phd",
+      "type": "integer",
+      "description": "Years since jury member #4's thesis defense"
+    },
+    {
+      "name": "jury_member.4.yrs_since_first_jury",
+      "type": "integer",
+      "description": "Years since jury member #4's first participation in a thesis jury in France"
+    },
+    {
+      "name": "jury_member.5.idref",
+      "type": "string",
+      "description": "IdRef authority identifier of jury member #5"
+    },
+    {
+      "name": "jury_member.5.lastname",
+      "type": "string",
+      "description": "Last name of jury member #5"
+    },
+    {
+      "name": "jury_member.5.firstname",
+      "type": "string",
+      "description": "First name of jury member #5"
+    },
+    {
+      "name": "jury_member.5.gender",
+      "type": "string",
+      "description": "Gender of jury member #5"
+    },
+    {
+      "name": "jury_member.5.birthdate",
+      "type": "date",
+      "description": "Birth date of jury member #5"
+    },
+    {
+      "name": "jury_member.5.deathdate",
+      "type": "date",
+      "description": "Death date of jury member #5"
+    },
+    {
+      "name": "jury_member.5.languages",
+      "type": "string",
+      "description": "Languages spoken by jury member #5"
+    },
+    {
+      "name": "jury_member.5.country",
+      "type": "string",
+      "description": "Country of origin of jury member #5"
+    },
+    {
+      "name": "jury_member.5.centrality",
+      "type": "integer",
+      "description": "Number of occurrences in juries in the past 4 years for jury member #5"
+    },
+    {
+      "name": "jury_member.5.age",
+      "type": "integer",
+      "description": "Age of jury member #5 (at the time of the defense)"
+    },
+    {
+      "name": "jury_member.5.yrs_since_phd",
+      "type": "integer",
+      "description": "Years since jury member #5's thesis defense"
+    },
+    {
+      "name": "jury_member.5.yrs_since_first_jury",
+      "type": "integer",
+      "description": "Years since jury member #5's first participation in a thesis jury in France"
+    },
+    {
+      "name": "jury_member.6.idref",
+      "type": "string",
+      "description": "IdRef authority identifier of jury member #6"
+    },
+    {
+      "name": "jury_member.6.lastname",
+      "type": "string",
+      "description": "Last name of jury member #6"
+    },
+    {
+      "name": "jury_member.6.firstname",
+      "type": "string",
+      "description": "First name of jury member #6"
+    },
+    {
+      "name": "jury_member.6.gender",
+      "type": "string",
+      "description": "Gender of jury member #6"
+    },
+    {
+      "name": "jury_member.6.birthdate",
+      "type": "date",
+      "description": "Birth date of jury member #6"
+    },
+    {
+      "name": "jury_member.6.deathdate",
+      "type": "date",
+      "description": "Death date of jury member #6"
+    },
+    {
+      "name": "jury_member.6.languages",
+      "type": "string",
+      "description": "Languages spoken by jury member #6"
+    },
+    {
+      "name": "jury_member.6.country",
+      "type": "string",
+      "description": "Country of origin of jury member #6"
+    },
+    {
+      "name": "jury_member.6.centrality",
+      "type": "integer",
+      "description": "Number of occurrences in juries in the past 4 years for jury member #6"
+    },
+    {
+      "name": "jury_member.6.age",
+      "type": "integer",
+      "description": "Age of jury member #6 (at the time of the defense)"
+    },
+    {
+      "name": "jury_member.6.yrs_since_phd",
+      "type": "integer",
+      "description": "Years since jury member #6's thesis defense"
+    },
+    {
+      "name": "jury_member.6.yrs_since_first_jury",
+      "type": "integer",
+      "description": "Years since jury member #6's first participation in a thesis jury in France"
+    },
+    {
+      "name": "jury_member.7.idref",
+      "type": "string",
+      "description": "IdRef authority identifier of jury member #7"
+    },
+    {
+      "name": "jury_member.7.lastname",
+      "type": "string",
+      "description": "Last name of jury member #7"
+    },
+    {
+      "name": "jury_member.7.firstname",
+      "type": "string",
+      "description": "First name of jury member #7"
+    },
+    {
+      "name": "jury_member.7.gender",
+      "type": "string",
+      "description": "Gender of jury member #7"
+    },
+    {
+      "name": "jury_member.7.birthdate",
+      "type": "date",
+      "description": "Birth date of jury member #7"
+    },
+    {
+      "name": "jury_member.7.deathdate",
+      "type": "date",
+      "description": "Death date of jury member #7"
+    },
+    {
+      "name": "jury_member.7.languages",
+      "type": "string",
+      "description": "Languages spoken by jury member #7"
+    },
+    {
+      "name": "jury_member.7.country",
+      "type": "string",
+      "description": "Country of origin of jury member #7"
+    },
+    {
+      "name": "jury_member.7.centrality",
+      "type": "integer",
+      "description": "Number of occurrences in juries in the past 4 years for jury member #7"
+    },
+    {
+      "name": "jury_member.7.age",
+      "type": "integer",
+      "description": "Age of jury member #7 (at the time of the defense)"
+    },
+    {
+      "name": "jury_member.7.yrs_since_phd",
+      "type": "integer",
+      "description": "Years since jury member #7's thesis defense"
+    },
+    {
+      "name": "jury_member.7.yrs_since_first_jury",
+      "type": "integer",
+      "description": "Years since jury member #7's first participation in a thesis jury in France"
+    },
+    {
+      "name": "jury_member.8.idref",
+      "type": "string",
+      "description": "IdRef authority identifier of jury member #8"
+    },
+    {
+      "name": "jury_member.8.lastname",
+      "type": "string",
+      "description": "Last name of jury member #8"
+    },
+    {
+      "name": "jury_member.8.firstname",
+      "type": "string",
+      "description": "First name of jury member #8"
+    },
+    {
+      "name": "jury_member.8.gender",
+      "type": "string",
+      "description": "Gender of jury member #8"
+    },
+    {
+      "name": "jury_member.8.birthdate",
+      "type": "date",
+      "description": "Birth date of jury member #8"
+    },
+    {
+      "name": "jury_member.8.deathdate",
+      "type": "date",
+      "description": "Death date of jury member #8"
+    },
+    {
+      "name": "jury_member.8.languages",
+      "type": "string",
+      "description": "Languages spoken by jury member #8"
+    },
+    {
+      "name": "jury_member.8.country",
+      "type": "string",
+      "description": "Country of origin of jury member #8"
+    },
+    {
+      "name": "jury_member.8.centrality",
+      "type": "integer",
+      "description": "Number of occurrences in juries in the past 4 years for jury member #8"
+    },
+    {
+      "name": "jury_member.8.age",
+      "type": "integer",
+      "description": "Age of jury member #8 (at the time of the defense)"
+    },
+    {
+      "name": "jury_member.8.yrs_since_phd",
+      "type": "integer",
+      "description": "Years since jury member #8's thesis defense"
+    },
+    {
+      "name": "jury_member.8.yrs_since_first_jury",
+      "type": "integer",
+      "description": "Years since jury member #8's first participation in a thesis jury in France"
+    },
+    {
+      "name": "jury_member.9.idref",
+      "type": "string",
+      "description": "IdRef authority identifier of jury member #9"
+    },
+    {
+      "name": "jury_member.9.lastname",
+      "type": "string",
+      "description": "Last name of jury member #9"
+    },
+    {
+      "name": "jury_member.9.firstname",
+      "type": "string",
+      "description": "First name of jury member #9"
+    },
+    {
+      "name": "jury_member.9.gender",
+      "type": "string",
+      "description": "Gender of jury member #9"
+    },
+    {
+      "name": "jury_member.9.birthdate",
+      "type": "date",
+      "description": "Birth date of jury member #9"
+    },
+    {
+      "name": "jury_member.9.deathdate",
+      "type": "date",
+      "description": "Death date of jury member #9"
+    },
+    {
+      "name": "jury_member.9.languages",
+      "type": "string",
+      "description": "Languages spoken by jury member #9"
+    },
+    {
+      "name": "jury_member.9.country",
+      "type": "string",
+      "description": "Country of origin of jury member #9"
+    },
+    {
+      "name": "jury_member.9.centrality",
+      "type": "integer",
+      "description": "Number of occurrences in juries in the past 4 years for jury member #9"
+    },
+    {
+      "name": "jury_member.9.age",
+      "type": "integer",
+      "description": "Age of jury member #9 (at the time of the defense)"
+    },
+    {
+      "name": "jury_member.9.yrs_since_phd",
+      "type": "integer",
+      "description": "Years since jury member #9's thesis defense"
+    },
+    {
+      "name": "jury_member.9.yrs_since_first_jury",
+      "type": "integer",
+      "description": "Years since jury member #9's first participation in a thesis jury in France"
+    },
+    {
+      "name": "jury_member.10.idref",
+      "type": "string",
+      "description": "IdRef authority identifier of jury member #10"
+    },
+    {
+      "name": "jury_member.10.lastname",
+      "type": "string",
+      "description": "Last name of jury member #10"
+    },
+    {
+      "name": "jury_member.10.firstname",
+      "type": "string",
+      "description": "First name of jury member #10"
+    },
+    {
+      "name": "jury_member.10.gender",
+      "type": "string",
+      "description": "Gender of jury member #10"
+    },
+    {
+      "name": "jury_member.10.birthdate",
+      "type": "date",
+      "description": "Birth date of jury member #10"
+    },
+    {
+      "name": "jury_member.10.deathdate",
+      "type": "date",
+      "description": "Death date of jury member #10"
+    },
+    {
+      "name": "jury_member.10.languages",
+      "type": "string",
+      "description": "Languages spoken by jury member #10"
+    },
+    {
+      "name": "jury_member.10.country",
+      "type": "string",
+      "description": "Country of origin of jury member #10"
+    },
+    {
+      "name": "jury_member.10.centrality",
+      "type": "integer",
+      "description": "Number of occurrences in juries in the past 4 years for jury member #10"
+    },
+    {
+      "name": "jury_member.10.age",
+      "type": "integer",
+      "description": "Age of jury member #10 (at the time of the defense)"
+    },
+    {
+      "name": "jury_member.10.yrs_since_phd",
+      "type": "integer",
+      "description": "Years since jury member #10's thesis defense"
+    },
+    {
+      "name": "jury_member.10.yrs_since_first_jury",
+      "type": "integer",
+      "description": "Years since jury member #10's first participation in a thesis jury in France"
+    },
+    {
+      "name": "jury_member.11.idref",
+      "type": "string",
+      "description": "IdRef authority identifier of jury member #11"
+    },
+    {
+      "name": "jury_member.11.lastname",
+      "type": "string",
+      "description": "Last name of jury member #11"
+    },
+    {
+      "name": "jury_member.11.firstname",
+      "type": "string",
+      "description": "First name of jury member #11"
+    },
+    {
+      "name": "jury_member.11.gender",
+      "type": "string",
+      "description": "Gender of jury member #11"
+    },
+    {
+      "name": "jury_member.11.birthdate",
+      "type": "date",
+      "description": "Birth date of jury member #11"
+    },
+    {
+      "name": "jury_member.11.deathdate",
+      "type": "date",
+      "description": "Death date of jury member #11"
+    },
+    {
+      "name": "jury_member.11.languages",
+      "type": "string",
+      "description": "Languages spoken by jury member #11"
+    },
+    {
+      "name": "jury_member.11.country",
+      "type": "string",
+      "description": "Country of origin of jury member #11"
+    },
+    {
+      "name": "jury_member.11.centrality",
+      "type": "integer",
+      "description": "Number of occurrences in juries in the past 4 years for jury member #11"
+    },
+    {
+      "name": "jury_member.11.age",
+      "type": "integer",
+      "description": "Age of jury member #11 (at the time of the defense)"
+    },
+    {
+      "name": "jury_member.11.yrs_since_phd",
+      "type": "integer",
+      "description": "Years since jury member #11's thesis defense"
+    },
+    {
+      "name": "jury_member.11.yrs_since_first_jury",
+      "type": "integer",
+      "description": "Years since jury member #11's first participation in a thesis jury in France"
+    },
+    {
+      "name": "jury_president.idref",
+      "type": "string",
+      "description": "IdRef authority identifier of the jury president"
+    },
+    {
+      "name": "jury_president.lastname",
+      "type": "string",
+      "description": "Last name of the jury president"
+    },
+    {
+      "name": "jury_president.firstname",
+      "type": "string",
+      "description": "First name of the jury president"
+    },
+    {
+      "name": "jury_president.gender",
+      "type": "string",
+      "description": "Gender of the jury president"
+    },
+    {
+      "name": "jury_president.birthdate",
+      "type": "date",
+      "description": "Birth date of the jury president"
+    },
+    {
+      "name": "jury_president.deathdate",
+      "type": "date",
+      "description": "Death date of the jury president"
+    },
+    {
+      "name": "jury_president.languages",
+      "type": "string",
+      "description": "Languages spoken by the jury president"
+    },
+    {
+      "name": "jury_president.country",
+      "type": "string",
+      "description": "Country of origin of the jury president"
+    },
+    {
+      "name": "rapporteur.0.idref",
+      "type": "string",
+      "description": "IdRef authority identifier of thesis rapporteur #0"
+    },
+    {
+      "name": "rapporteur.0.lastname",
+      "type": "string",
+      "description": "Last name of thesis rapporteur #0"
+    },
+    {
+      "name": "rapporteur.0.firstname",
+      "type": "string",
+      "description": "First name of thesis rapporteur #0"
+    },
+    {
+      "name": "rapporteur.0.gender",
+      "type": "string",
+      "description": "Gender of thesis rapporteur #0"
+    },
+    {
+      "name": "rapporteur.0.birthdate",
+      "type": "date",
+      "description": "Birth date of thesis rapporteur #0"
+    },
+    {
+      "name": "rapporteur.0.deathdate",
+      "type": "date",
+      "description": "Death date of thesis rapporteur #0"
+    },
+    {
+      "name": "rapporteur.0.languages",
+      "type": "string",
+      "description": "Languages spoken by thesis rapporteur #0"
+    },
+    {
+      "name": "rapporteur.0.country",
+      "type": "string",
+      "description": "Country of origin of thesis rapporteur #0"
+    },
+    {
+      "name": "rapporteur.1.idref",
+      "type": "string",
+      "description": "IdRef authority identifier of thesis rapporteur #1"
+    },
+    {
+      "name": "rapporteur.1.lastname",
+      "type": "string",
+      "description": "Last name of thesis rapporteur #1"
+    },
+    {
+      "name": "rapporteur.1.firstname",
+      "type": "string",
+      "description": "First name of thesis rapporteur #1"
+    },
+    {
+      "name": "rapporteur.1.gender",
+      "type": "string",
+      "description": "Gender of thesis rapporteur #1"
+    },
+    {
+      "name": "rapporteur.1.birthdate",
+      "type": "date",
+      "description": "Birth date of thesis rapporteur #1"
+    },
+    {
+      "name": "rapporteur.1.deathdate",
+      "type": "date",
+      "description": "Death date of thesis rapporteur #1"
+    },
+    {
+      "name": "rapporteur.1.languages",
+      "type": "string",
+      "description": "Languages spoken by thesis rapporteur #1"
+    },
+    {
+      "name": "rapporteur.1.country",
+      "type": "string",
+      "description": "Country of origin of thesis rapporteur #1"
+    },
+    {
+      "name": "rapporteur.2.idref",
+      "type": "string",
+      "description": "IdRef authority identifier of thesis rapporteur #2"
+    },
+    {
+      "name": "rapporteur.2.lastname",
+      "type": "string",
+      "description": "Last name of thesis rapporteur #2"
+    },
+    {
+      "name": "rapporteur.2.firstname",
+      "type": "string",
+      "description": "First name of thesis rapporteur #2"
+    },
+    {
+      "name": "rapporteur.2.gender",
+      "type": "string",
+      "description": "Gender of thesis rapporteur #2"
+    },
+    {
+      "name": "rapporteur.2.birthdate",
+      "type": "date",
+      "description": "Birth date of thesis rapporteur #2"
+    },
+    {
+      "name": "rapporteur.2.deathdate",
+      "type": "date",
+      "description": "Death date of thesis rapporteur #2"
+    },
+    {
+      "name": "rapporteur.2.languages",
+      "type": "string",
+      "description": "Languages spoken by thesis rapporteur #2"
+    },
+    {
+      "name": "rapporteur.2.country",
+      "type": "string",
+      "description": "Country of origin of thesis rapporteur #2"
+    },
+    {
+      "name": "rapporteur.3.idref",
+      "type": "string",
+      "description": "IdRef authority identifier of thesis rapporteur #3"
+    },
+    {
+      "name": "rapporteur.3.lastname",
+      "type": "string",
+      "description": "Last name of thesis rapporteur #3"
+    },
+    {
+      "name": "rapporteur.3.firstname",
+      "type": "string",
+      "description": "First name of thesis rapporteur #3"
+    },
+    {
+      "name": "rapporteur.3.gender",
+      "type": "string",
+      "description": "Gender of thesis rapporteur #3"
+    },
+    {
+      "name": "rapporteur.3.birthdate",
+      "type": "date",
+      "description": "Birth date of thesis rapporteur #3"
+    },
+    {
+      "name": "rapporteur.3.deathdate",
+      "type": "date",
+      "description": "Death date of thesis rapporteur #3"
+    },
+    {
+      "name": "rapporteur.3.languages",
+      "type": "string",
+      "description": "Languages spoken by thesis rapporteur #3"
+    },
+    {
+      "name": "rapporteur.3.country",
+      "type": "string",
+      "description": "Country of origin of thesis rapporteur #3"
+    },
+    {
+      "name": "rapporteur.4.idref",
+      "type": "string",
+      "description": "IdRef authority identifier of thesis rapporteur #4"
+    },
+    {
+      "name": "rapporteur.4.lastname",
+      "type": "string",
+      "description": "Last name of thesis rapporteur #4"
+    },
+    {
+      "name": "rapporteur.4.firstname",
+      "type": "string",
+      "description": "First name of thesis rapporteur #4"
+    },
+    {
+      "name": "rapporteur.4.gender",
+      "type": "string",
+      "description": "Gender of thesis rapporteur #4"
+    },
+    {
+      "name": "rapporteur.4.birthdate",
+      "type": "date",
+      "description": "Birth date of thesis rapporteur #4"
+    },
+    {
+      "name": "rapporteur.4.deathdate",
+      "type": "date",
+      "description": "Death date of thesis rapporteur #4"
+    },
+    {
+      "name": "rapporteur.4.languages",
+      "type": "string",
+      "description": "Languages spoken by thesis rapporteur #4"
+    },
+    {
+      "name": "rapporteur.4.country",
+      "type": "string",
+      "description": "Country of origin of thesis rapporteur #4"
+    },
+    {
+      "name": "rapporteur.5.idref",
+      "type": "string",
+      "description": "IdRef authority identifier of thesis rapporteur #5"
+    },
+    {
+      "name": "rapporteur.5.lastname",
+      "type": "string",
+      "description": "Last name of thesis rapporteur #5"
+    },
+    {
+      "name": "rapporteur.5.firstname",
+      "type": "string",
+      "description": "First name of thesis rapporteur #5"
+    },
+    {
+      "name": "rapporteur.5.gender",
+      "type": "string",
+      "description": "Gender of thesis rapporteur #5"
+    },
+    {
+      "name": "rapporteur.5.birthdate",
+      "type": "date",
+      "description": "Birth date of thesis rapporteur #5"
+    },
+    {
+      "name": "rapporteur.5.deathdate",
+      "type": "date",
+      "description": "Death date of thesis rapporteur #5"
+    },
+    {
+      "name": "rapporteur.5.languages",
+      "type": "string",
+      "description": "Languages spoken by thesis rapporteur #5"
+    },
+    {
+      "name": "rapporteur.5.country",
+      "type": "string",
+      "description": "Country of origin of thesis rapporteur #5"
+    },
+    {
+      "name": "doctoral_school.0.idref",
+      "type": "string",
+      "description": "IdRef identifier for doctoral school #0"
+    },
+    {
+      "name": "doctoral_school.0.name",
+      "type": "string",
+      "description": "Name of the doctoral school #0"
+    },
+    {
+      "name": "doctoral_school.1.idref",
+      "type": "string",
+      "description": "IdRef identifier for doctoral school #1"
+    },
+    {
+      "name": "doctoral_school.1.name",
+      "type": "string",
+      "description": "Name of the doctoral school #1"
+    },
+    {
+      "name": "research_partner.0.idref",
+      "type": "string",
+      "description": "IdRef identifier for research partner #0"
+    },
+    {
+      "name": "research_partner.0.name",
+      "type": "string",
+      "description": "Name of the research partner #0"
+    },
+    {
+      "name": "research_partner.0.type",
+      "type": "string",
+      "description": "Category of research partner #0"
+    },
+    {
+      "name": "research_partner.1.idref",
+      "type": "string",
+      "description": "IdRef identifier for research partner #1"
+    },
+    {
+      "name": "research_partner.1.name",
+      "type": "string",
+      "description": "Name of the research partner #1"
+    },
+    {
+      "name": "research_partner.1.type",
+      "type": "string",
+      "description": "Category of research partner #1"
+    },
+    {
+      "name": "research_partner.2.idref",
+      "type": "string",
+      "description": "IdRef identifier for research partner #2"
+    },
+    {
+      "name": "research_partner.2.name",
+      "type": "string",
+      "description": "Name of the research partner #2"
+    },
+    {
+      "name": "research_partner.2.type",
+      "type": "string",
+      "description": "Category of research partner #2"
+    },
+    {
+      "name": "research_partner.3.idref",
+      "type": "string",
+      "description": "IdRef identifier for research partner #3"
+    },
+    {
+      "name": "research_partner.3.name",
+      "type": "string",
+      "description": "Name of the research partner #3"
+    },
+    {
+      "name": "research_partner.3.type",
+      "type": "string",
+      "description": "Category of research partner #3"
+    },
+    {
+      "name": "research_partner.4.idref",
+      "type": "string",
+      "description": "IdRef identifier for research partner #4"
+    },
+    {
+      "name": "research_partner.4.name",
+      "type": "string",
+      "description": "Name of the research partner #4"
+    },
+    {
+      "name": "research_partner.4.type",
+      "type": "string",
+      "description": "Category of research partner #4"
+    },
+    {
+      "name": "research_partner.5.idref",
+      "type": "string",
+      "description": "IdRef identifier for research partner #5"
+    },
+    {
+      "name": "research_partner.5.name",
+      "type": "string",
+      "description": "Name of the research partner #5"
+    },
+    {
+      "name": "research_partner.5.type",
+      "type": "string",
+      "description": "Category of research partner #5"
+    },
+    {
+      "name": "research_partner.6.idref",
+      "type": "string",
+      "description": "IdRef identifier for research partner #6"
+    },
+    {
+      "name": "research_partner.6.name",
+      "type": "string",
+      "description": "Name of the research partner #6"
+    },
+    {
+      "name": "research_partner.6.type",
+      "type": "string",
+      "description": "Category of research partner #6"
+    },
+    {
+      "name": "research_partner.7.idref",
+      "type": "string",
+      "description": "IdRef identifier for research partner #7"
+    },
+    {
+      "name": "research_partner.7.name",
+      "type": "string",
+      "description": "Name of the research partner #7"
+    },
+    {
+      "name": "research_partner.7.type",
+      "type": "string",
+      "description": "Category of research partner #7"
+    },
+    {
+      "name": "topics.0.language",
+      "type": "string",
+      "description": "Language of keywords in column 'topics.0'"
+    },
+    {
+      "name": "topics.0",
+      "type": "string",
+      "description": "List of keywords describing the thesis #0"
+    },
+    {
+      "name": "topics.1.language",
+      "type": "string",
+      "description": "Language of keywords in column 'topics.1'"
+    },
+    {
+      "name": "topics.1",
+      "type": "string",
+      "description": "List of keywords describing the thesis #1"
+    },
+    {
+      "name": "topics.2.language",
+      "type": "string",
+      "description": "Language of keywords in column 'topics.2'"
+    },
+    {
+      "name": "topics.2",
+      "type": "string",
+      "description": "List of keywords describing the thesis #2"
+    },
+    {
+      "name": "topics.3.language",
+      "type": "string",
+      "description": "Language of keywords in column 'topics.3'"
+    },
+    {
+      "name": "topics.3",
+      "type": "string",
+      "description": "List of keywords describing the thesis #3"
+    },
+    {
+      "name": "topics.4.language",
+      "type": "string",
+      "description": "Language of keywords in column 'topics.4'"
+    },
+    {
+      "name": "topics.4",
+      "type": "string",
+      "description": "List of keywords describing the thesis #4"
+    },
+    {
+      "name": "topics.5.language",
+      "type": "string",
+      "description": "Language of keywords in column 'topics.5'"
+    },
+    {
+      "name": "topics.5",
+      "type": "string",
+      "description": "List of keywords describing the thesis #5"
+    },
+    {
+      "name": "topics.6.language",
+      "type": "string",
+      "description": "Language of keywords in column 'topics.6'"
+    },
+    {
+      "name": "topics.6",
+      "type": "string",
+      "description": "List of keywords describing the thesis #6"
+    },
+    {
+      "name": "topics.7.language",
+      "type": "string",
+      "description": "Language of keywords in column 'topics.7'"
+    },
+    {
+      "name": "topics.7",
+      "type": "string",
+      "description": "List of keywords describing the thesis #7"
+    },
+    {
+      "name": "topics.8.language",
+      "type": "string",
+      "description": "Language of keywords in column 'topics.8'"
+    },
+    {
+      "name": "topics.8",
+      "type": "string",
+      "description": "List of keywords describing the thesis #8"
+    },
+    {
+      "name": "topics.9.language",
+      "type": "string",
+      "description": "Language of keywords in column 'topics.9'"
+    },
+    {
+      "name": "topics.9",
+      "type": "string",
+      "description": "List of keywords describing the thesis #9"
+    },
+    {
+      "name": "defense_institution.0.idref",
+      "type": "string",
+      "description": "IdRef identifier for thesis defense institution #0"
+    },
+    {
+      "name": "defense_institution.0.name",
+      "type": "string",
+      "description": "Name of thesis defense institution #0"
+    },
+    {
+      "name": "defense_institution.1.idref",
+      "type": "string",
+      "description": "IdRef identifier for thesis defense institution #1"
+    },
+    {
+      "name": "defense_institution.1.name",
+      "type": "string",
+      "description": "Name of thesis defense institution #1"
+    },
+    {
+      "name": "defense_institution.2.idref",
+      "type": "string",
+      "description": "IdRef identifier for thesis defense institution #2"
+    },
+    {
+      "name": "defense_institution.2.name",
+      "type": "string",
+      "description": "Name of thesis defense institution #2"
+    },
+    {
+      "name": "defense_institution.3.idref",
+      "type": "string",
+      "description": "IdRef identifier for thesis defense institution #3"
+    },
+    {
+      "name": "defense_institution.3.name",
+      "type": "string",
+      "description": "Name of thesis defense institution #3"
+    },
+    {
+      "name": "defense_institution.4.idref",
+      "type": "string",
+      "description": "IdRef identifier for thesis defense institution #4"
+    },
+    {
+      "name": "defense_institution.4.name",
+      "type": "string",
+      "description": "Name of thesis defense institution #4"
+    },
+    {
+      "name": "language.0",
+      "type": "string",
+      "description": "Thesis language #0"
+    },
+    {
+      "name": "language.1",
+      "type": "string",
+      "description": "Thesis language #1"
+    },
+    {
+      "name": "language.2",
+      "type": "string",
+      "description": "Thesis language #2"
+    },
+    {
+      "name": "language.3",
+      "type": "string",
+      "description": "Thesis language #3"
+    },
+    {
+      "name": "oai.0",
+      "type": "string",
+      "description": "Dewey Decimal Class #0 for the thesis. Not available for theses gathered using the API."
+    },
+    {
+      "name": "oai.1",
+      "type": "string",
+      "description": "Dewey Decimal Class #1 for the thesis. Not available for theses gathered using the API."
+    },
+    {
+      "name": "oai.2",
+      "type": "string",
+      "description": "Dewey Decimal Class #2 for the thesis. Not available for theses gathered using the API."
+    },
+    {
+      "name": "oai.3",
+      "type": "string",
+      "description": "Dewey Decimal Class #3 for the thesis. Not available for theses gathered using the API."
+    },
+    {
+      "name": "oai.4",
+      "type": "string",
+      "description": "Dewey Decimal Class #4 for the thesis. Not available for theses gathered using the API."
+    },
+    {
+      "name": "oai.5",
+      "type": "string",
+      "description": "Dewey Decimal Class #5 for the thesis. Not available for theses gathered using the API."
+    },
+    {
+      "name": "oai.6",
+      "type": "string",
+      "description": "Dewey Decimal Class #6 for the thesis. Not available for theses gathered using the API."
+    },
+    {
+      "name": "oai.7",
+      "type": "string",
+      "description": "Dewey Decimal Class #7 for the thesis. Not available for theses gathered using the API."
+    },
+    {
+      "name": "abstract.0.language",
+      "type": "string",
+      "description": "Language of thesis abstract in column 'abstract.0'"
+    },
+    {
+      "name": "abstract.0",
+      "type": "string",
+      "description": "Thesis abstract #0"
+    },
+    {
+      "name": "abstract.1.language",
+      "type": "string",
+      "description": "Language of thesis abstract in column 'abstract.1'"
+    },
+    {
+      "name": "abstract.1",
+      "type": "string",
+      "description": "Thesis abstract #1"
+    },
+    {
+      "name": "abstract.2.language",
+      "type": "string",
+      "description": "Language of thesis abstract in column 'abstract.2'"
+    },
+    {
+      "name": "abstract.2",
+      "type": "string",
+      "description": "Thesis abstract #2"
+    },
+    {
+      "name": "abstract.3.language",
+      "type": "string",
+      "description": "Language of thesis abstract in column 'abstract.3'"
+    },
+    {
+      "name": "abstract.3",
+      "type": "string",
+      "description": "Thesis abstract #3"
+    },
+    {
+      "name": "abstract.4.language",
+      "type": "string",
+      "description": "Language of thesis abstract in column 'abstract.4'"
+    },
+    {
+      "name": "abstract.4",
+      "type": "string",
+      "description": "Thesis abstract #4"
+    },
+    {
+      "name": "abstract.5.language",
+      "type": "string",
+      "description": "Language of thesis abstract in column 'abstract.5'"
+    },
+    {
+      "name": "abstract.5",
+      "type": "string",
+      "description": "Thesis abstract #5"
+    },
+    {
+      "name": "title.0.language",
+      "type": "string",
+      "description": "Language of thesis title in column 'title.0'"
+    },
+    {
+      "name": "title.0",
+      "type": "string",
+      "description": "Thesis title #0"
+    },
+    {
+      "name": "title.1.language",
+      "type": "string",
+      "description": "Language of thesis title in column 'title.1'"
+    },
+    {
+      "name": "title.1",
+      "type": "string",
+      "description": "Thesis title #1"
+    },
+    {
+      "name": "title.2.language",
+      "type": "string",
+      "description": "Language of thesis title in column 'title.2'"
+    },
+    {
+      "name": "title.2",
+      "type": "string",
+      "description": "Thesis title #2"
+    },
+    {
+      "name": "title.3.language",
+      "type": "string",
+      "description": "Language of thesis title in column 'title.3'"
+    },
+    {
+      "name": "title.3",
+      "type": "string",
+      "description": "Thesis title #3"
+    },
+    {
+      "name": "title.4.language",
+      "type": "string",
+      "description": "Language of thesis title in column 'title.4'"
+    },
+    {
+      "name": "title.4",
+      "type": "string",
+      "description": "Thesis title #4"
+    },
+    {
+      "name": "title.5.language",
+      "type": "string",
+      "description": "Language of thesis title in column 'title.5'"
+    },
+    {
+      "name": "title.5",
+      "type": "string",
+      "description": "Thesis title #5"
+    },
+    {
+      "name": "num_languages",
+      "type": "integer",
+      "description": "Number of languages of the thesis"
+    },
+    {
+      "name": "num_supervisors",
+      "type": "integer",
+      "description": "Number of thesis supervisors"
+    },
+    {
+      "name": "num_jury_members",
+      "type": "integer",
+      "description": "Number of jury members"
+    },
+    {
+      "name": "num_research_partners",
+      "type": "integer",
+      "description": "Number of research partners"
+    },
+    {
+      "name": "num_rapporteurs",
+      "type": "integer",
+      "description": "Number of thesis rapporteurs"
+    },
+    {
+      "name": "tel",
+      "type": "string",
+      "description": "'Thèses en ligne' thesis number"
+    },
+    {
+      "name": "ppn",
+      "type": "string",
+      "description": "SUDOC Pica Production Number"
+    }
+  ]
+}
